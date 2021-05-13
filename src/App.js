@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import profilePic from './img/blank-profile.png';
+import optionsImg from './img/options.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className="main-container">
+       <div className="left-container">
+         <div className="main-profile-container">
+            {/* profile pic, name, create group, sign out, optional: name and username instead of just name */}
+            <div className="profile-info-container">
+              <img src={profilePic} alt="profile picture" />
+              <span>Name</span>
+            </div>
+            <div className="profile-options-container">
+              <img src={optionsImg} alt="options" />
+            </div>
+            
+         </div>
+       </div>
+       <div className="middle-container"></div>
+       <div className="right-container"></div>
+     </div>
     </div>
   );
 }
