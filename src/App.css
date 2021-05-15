@@ -1,3 +1,6 @@
+:root {
+  --color-1: #eee;
+}
 body {
   margin:0;
   padding:0;
@@ -17,7 +20,7 @@ body {
   grid-template-columns: 25% 50% 25%;
 }
 .left-container, .right-container, .middle-container{
-  border: 1px solid #eee;
+  border: 1px solid var(--color-1);
 }
 .profile-info-container img {
   width:50px;
@@ -26,7 +29,7 @@ body {
 .main-profile-container {
   display: flex;
   justify-content: space-between;
-  border-bottom:2px solid #eee;
+  border-bottom:2px solid var(--color-1);
   padding: 30px 20px;
 }
 .profile-info-container {
@@ -48,4 +51,30 @@ font-size:18px;
   display:flex;
   align-items: center;
 }
+.group-list-container ul {
+  margin:0;
+  list-style: none;
+  padding-left:0;
+}
 
+.group-list-container ul li {
+  height:85px;
+  border-bottom:1px solid var(--color-1);
+  display:flex;
+  align-items: center;
+  padding-left:10px;
+  font-weight:bold;
+}
+.group-info-container {
+  display:grid;
+  place-items: center;
+  border-bottom:1px solid var(--color-1);
+  padding: 15px 0;
+}
+.main-text-container {
+  display:flex;
+  align-items:center;
+  position:absolute;
+  bottom:0;
+  padding:20px;
+}
